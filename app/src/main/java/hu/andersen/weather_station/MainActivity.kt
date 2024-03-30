@@ -31,7 +31,9 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.TextUnit
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.lifecycle.lifecycleScope
 import hu.andersen.weather_station.ui.theme.WeatherstationTheme
+import kotlinx.coroutines.launch
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -48,6 +50,12 @@ class MainActivity : ComponentActivity() {
                     Greeting("Android", context= this)
                 }
             }
+        }
+
+        lifecycleScope.launch {
+
+
+
         }
     }
 }
