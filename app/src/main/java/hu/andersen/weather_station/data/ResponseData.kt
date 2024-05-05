@@ -9,8 +9,18 @@ data class ResponseData(
 
 @Serializable
 data class DataItem(
-    val humidity: String,
-    val id: Int,
-    val temperature: String,
-    val timestamp_record: String
+    val humidity: Float,
+    val id: String,
+    val temperature: Float,
+    val timestamp_record: String,
+    val difference:Int = 0,
+    val now:String = ""
 )
+
+@Serializable
+data class ResponseLiveData(
+    val data: DataItem? = null
+)
+
+
+

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/gradient_bg"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <io.github.farshidroohi.LineChart
+        android:id="@+id/lineChart"
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        app:chart_bg_color="#FF2B4A83"
+        app:chart_line_color="#32FFFFFF"
+        app:chart_line_size="4dp"
+        app:chart_padding_bottom="40dp"
+        app:chart_padding_left="20dp"
+        app:chart_padding_right="20dp"
+        app:chart_padding_top="20dp" />
+
+
+    <TextView
+        android:id="@+id/lineChartValue"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_marginHorizontal="14dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_marginHorizontal="14dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:text="Temperature"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+        <View
+            android:layout_marginHorizontal="20dp"
+            android:background="@color/yellow"
+            android:layout_width="100dp"
+            android:layout_height="6dp"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_marginHorizontal="14dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:text="Humidity"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+        <View
+            android:layout_marginHorizontal="20dp"
+            android:background="@color/white"
+            android:layout_width="100dp"
+            android:layout_height="6dp"/>
+
+    </LinearLayout>
+
+
+    <Space
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+
+    <Button
+        android:id="@+id/filter_button"
+        android:layout_margin="14dp"
+        android:textColor="@color/white"
+        android:background="@color/mid_blue"
+        android:text="Filter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+
+
+
+
+</LinearLayout>
